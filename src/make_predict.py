@@ -282,6 +282,4 @@ if __name__=='__main__':
 
     price_change = unnormalize(pred)
 
-
-    print( )
-
+    print("The Dow should open: {} from the previous open.".format(np.round(price_change[0][0],2)))

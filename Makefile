@@ -147,3 +147,7 @@ help:
 
 prepare_glove:
 	kaggle datasets download -d takuok/glove840b300dtxt -p /models/glove
+	unzip /models/glove/glove840b300dtxt.zip -d /models/glove
+
+test_predict:
+	$(PYTHON_INTERPRETER) src/make_predict.py
