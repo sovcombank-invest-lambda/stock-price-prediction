@@ -1,4 +1,4 @@
-stock-price-prediction
+Предсказание цены акций на основе новостей
 ==============================
 
 Using text classification models for stock price prediction. (MVP: Exchange rates)
@@ -55,3 +55,4 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
