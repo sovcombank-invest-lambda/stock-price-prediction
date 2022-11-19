@@ -27,6 +27,7 @@ requirements: test_environment
 
 ## Make Dataset
 data: requirements
+	kaggle datasets download -d aaron7sun/stocknews -p data/raw
 	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
 
 ## Delete all compiled Python files
@@ -142,3 +143,7 @@ help:
 		printf "\n"; \
 	}' \
 	| more $(shell test $(shell uname) = Darwin && echo '--no-init --raw-control-chars')
+
+
+prepare_glove:
+	kaggle datasets download -d takuok/glove840b300dtxt -p /models/glove

@@ -87,3 +87,6 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+models/glove
+notebooks/question_pairs_weights_*.h5
